@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 1082251928}
   - component: {fileID: 1082251927}
   m_Layer: 0
-  m_Name: TankContainer
+  m_Name: TankSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,6 +150,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f349c3afc2c868e42bc403c44b244347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tank:
+  - tankType: 0
+    movementSpeed: 30
+    rotationSpeed: 60
+    color: {fileID: 2100000, guid: 87bf8b67d0a902842a3b617c1c75d6e5, type: 2}
+  - tankType: 1
+    movementSpeed: 15
+    rotationSpeed: 50
+    color: {fileID: 2100000, guid: 463052f3f7389124f9e7b34b0b931d0d, type: 2}
+  - tankType: 2
+    movementSpeed: 45
+    rotationSpeed: 100
+    color: {fileID: 2100000, guid: ff21ff0ea9b18924bb1fdfbb0e58f5cb, type: 2}
   tankView: {fileID: 7432398089058032788, guid: ce2abb7bbca3f8b4b9899cf2e3a2ca50,
     type: 3}
 --- !u!4 &1082251928
@@ -242,13 +255,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179543937}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1001 &1805823116
 PrefabInstance:
   m_ObjectHideFlags: 0

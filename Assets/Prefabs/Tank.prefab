@@ -321,6 +321,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2549652127771484368}
+  meshRenderer:
+  - {fileID: 4353528530165198620}
+  - {fileID: 4353528530165198618}
+  - {fileID: 4353528530165198612}
+  - {fileID: 4353528530165198622}
 --- !u!54 &2549652127771484368
 Rigidbody:
   m_ObjectHideFlags: 0

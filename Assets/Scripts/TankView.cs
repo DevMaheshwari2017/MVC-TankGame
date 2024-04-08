@@ -6,6 +6,8 @@ public class TankView : MonoBehaviour
 {
     [SerializeField]
     private Rigidbody rb;
+    [SerializeField]
+    private MeshRenderer[] meshRenderer;
 
     private TankController tankController;
     private float movement;
@@ -42,4 +44,11 @@ public class TankView : MonoBehaviour
         tankController = _tankController;
     }
 
+    public void ChangeTankColor(Material color) 
+    {
+        for (int i = 0; i < meshRenderer.Length; i++) 
+        {
+            meshRenderer[i].material = color;
+        }
+    }
 }
