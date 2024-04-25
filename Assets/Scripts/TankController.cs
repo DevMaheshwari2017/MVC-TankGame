@@ -5,6 +5,12 @@ public class TankController
     private TankView tankView;
     private Rigidbody rb;
 
+    //Getter
+    public TankModel GetTankModel()
+    {
+        return tankModel;
+    }
+
     public TankController(TankModel _tankModel, TankView _tankView)
     {
         tankModel = _tankModel;
@@ -13,6 +19,8 @@ public class TankController
 
         tankModel.SetTankController(this);
         tankView.SetTankController(this);
+
+        tankView.ChangeTankColor(tankModel.color);
     }
 
     public void Move(float Movement, float MovementSpeed)
@@ -26,4 +34,6 @@ public class TankController
         Quaternion deltaRotation = Quaternion.Euler(rotatio * Time.deltaTime);
         rb.MoveRotation(rb.rotation * deltaRotation);
     }
+
+
 }
