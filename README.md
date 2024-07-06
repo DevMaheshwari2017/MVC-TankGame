@@ -16,4 +16,6 @@ Controller: Acts as an intermediary between the Model and View, handling user in
 
 
 This project is not just about the visual or conceptual appeal but is a focused endeavor to illustrate my proficiency with MVC design patterns in a real-world application. "Tank Mania" stands as a clear example of how foundational software design principles can be effectively utilized to enhance game development projects.
+
+[![Tank Mania](https://img.youtube.com/vi/e4wOVcL9F-U/0.jpg)](https://www.youtube.com/watch?v=e4wOVcL9F-U)
  
